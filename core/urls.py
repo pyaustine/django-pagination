@@ -11,21 +11,21 @@ urlpatterns = [
     path(
         "faux",
         views.AllKeywordsView.as_view(
-            template_name="terms/faux_pagination.html"
+            template_name="core/faux_pagination.html"
         ),
     ),
     path(
         "load_more",
-        views.AllKeywordsView.as_view(template_name="terms/load_more.html"),
+        views.AllKeywordsView.as_view(template_name="core/load_more.html"),
     ),
     path(
         "infinite_scrolling",
         views.AllKeywordsView.as_view(
-            template_name="terms/infinite_scrolling.html"
+            template_name="core/infinite_scrolling.html"
         ),
     ),
     path(
         "search",
-        views.AllKeywordsView.as_view(template_name="terms/search.html"),
+        views.AllKeywordsView.as_view(template_name="core/search.html"),
     ),
 ]
