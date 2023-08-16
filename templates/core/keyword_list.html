@@ -1,0 +1,50 @@
+{% extends "core/base.html" %}
+<!--  -->
+{% block content %} {% for kw in page_obj %}
+<pre>{{kw}}</pre>
+{% endfor %} {% endblock %}
+<!--  -->
+{% block pagination %}
+<!--  -->
+{# Remove the comment/endcomment tags to see the example #}
+<!--  -->
+{% comment %}
+<!--  -->
+{% include "core/examples/current_page.html" %}
+<!--  -->
+{% endcomment%}
+<!--  -->
+
+{% comment %}
+<!--  -->
+{% include "core/examples/all_pages.html" %}
+<!--  -->
+{% endcomment%}
+<!--  -->
+
+{% comment %}
+<!--  -->
+{% include "core/examples/elided_pages.html" %}
+<!--  -->
+{% endcomment%}
+<!--  -->
+
+{% comment %}
+<!--  -->
+{% include "core/examples/previous_next.html" %}
+<!--  -->
+{% endcomment%}
+<!--  -->
+
+{% comment %}
+<!--  -->
+{% include "core/examples/first_last.html" %} {% endcomment%}
+<!--  -->
+
+{% comment %}
+<!--  -->
+{% include "core/examples/combined.html" %}
+<!--  -->
+{% endcomment%}
+<!--  -->
+{% endblock %}
